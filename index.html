@@ -125,6 +125,9 @@
   .service:hover{box-shadow:var(--shadow);transform:translateY(-4px)}
   .service:hover::before{opacity:1}
   .service-top{display:flex;align-items:center;gap:18px;margin-bottom:18px}
+  .service-photo{margin:-38px -36px 30px;aspect-ratio:16/11;overflow:hidden;background:var(--nude)}
+  .service-photo img{width:100%;height:100%;object-fit:cover;transition:transform .8s ease}
+  .service:hover .service-photo img{transform:scale(1.04)}
   .service-top .icon{margin:0;width:62px;height:62px;flex:none}
   .service-top .num{font-family:var(--serif);font-style:italic;color:var(--gold);font-size:.95rem}
   .service h3{font-size:1.85rem}
@@ -234,6 +237,7 @@
     .strip-card h3{font-size:1.08rem}
     .strip-card p{display:none}
     .service{padding:30px 22px}
+    .service-photo{margin:-30px -22px 24px}
     .service h3{font-size:1.55rem}
     .service .btn{width:100%;justify-content:center}
     .values{grid-template-columns:1fr}
@@ -336,6 +340,7 @@
 
       <div class="services-grid">
         <article class="service reveal" id="maquiagem">
+          <div class="service-photo"><img src="img/servico-maquiagem.jpg" alt="Cliente com maquiagem social em tons pêssego, pele iluminada e cílios marcados" width="989" height="1230" loading="lazy" style="object-position:50% 28%"></div>
           <div class="service-top">
             <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><use href="#i-brush"/></svg></div>
             <div><span class="num">01</span><h3>Maquiagem Social</h3></div>
@@ -351,6 +356,7 @@
         </article>
 
         <article class="service reveal" id="henna">
+          <div class="service-photo"><img src="img/servico-henna.jpg" alt="Sobrancelhas definidas com design e henna, efeito natural fio a fio" width="1086" height="1448" loading="lazy" style="object-position:50% 38%"></div>
           <div class="service-top">
             <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><use href="#i-brow-fill"/></svg></div>
             <div><span class="num">02</span><h3>Design com Henna</h3></div>
@@ -525,8 +531,8 @@
 <script>
   /* ===== CONFIGURAÇÃO — troque aqui ===== */
   const CONFIG = {
-    whatsapp: "SEU_NUMERO",   // só números com DDI + DDD. Ex.: 5511999998888
-    instagram: "SEU_ARROBA"   // sem o @. Ex.: carolinafreitas.design
+    whatsapp: "5548996609947",   // só números com DDI + DDD. Ex.: 5511999998888
+    instagram: "designer_carolfreitas"   // sem o @. Ex.: carolinafreitas.design
   };
   /* ====================================== */
 
